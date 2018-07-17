@@ -9,5 +9,6 @@ class Demo{
 //		VoetbalSpeler vb = new VoetbalSpeler();
 		Scheidsrechter sr = new Scheidsrechter();
 		deBal.schieten();
+		deBal.schieten();
 	}
 }
