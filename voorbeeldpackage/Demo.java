@@ -10,5 +10,6 @@ class Demo{
 		Scheidsrechter sr = new Scheidsrechter();
 		deBal.schieten();
 		deBal.schieten();
+		deBal.schieten();
 	}
 }
