@@ -1,9 +1,9 @@
 package voorbeeldpackage;
 
-import voorbeeldpackagetwee.Bal;
+import voorbeeldpackagetwee.*;
 import voorbeeldpackagetwee.subpackage.Scheidsrechter;
 import static voorbeeldpackagetwee.Bal.*;
-
+//import static voorbeeldpackagetwee.VoetbalSpeler.*;
 //static import
 
 class Demo{
@@ -23,11 +23,15 @@ class Demo{
 		
 		HockeyScheidsrechter hs = new HockeyScheidsrechter();
 //		hs.shirtkleur = "zwart"; // is protected kan alleen VIA erfrelatie. Dit is NIET langs de erfrelatie
+		
+		 new voorbeeldpackagetwee.VoetbalSpeler().wedstrijdSpelen();
+	
 	}
 }
 
 class HockeyScheidsrechter extends Scheidsrechter{
 	void voorstellen() {
+	//	voorbeeldpackagetwee.VoetbalSpeler.wedstrijdSpelen();
 		landVanHerkomst = "Nederland";
 		shirtkleur = "Roze"; // Dit is WEL via de erfrelatie
 //		fluitKleur = "Rood";// is default
