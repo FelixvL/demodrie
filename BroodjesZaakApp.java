@@ -13,10 +13,10 @@ class BroodjesZaak{
 	KortingsFestival kortingsFestival = new KortingsFestival();
 	
 	BroodjesZaak(){
-		broodjes.add(new Broodje("Kaas",125));
-		broodjes.add(new Broodje("Worst",150));
-		broodjes.add(new Broodje("Eiersalade",225));
-		broodjes.add(new Broodje("Boterhammenworst",30));
+		broodjes.add(new Pistolet("Kaas",125));
+		broodjes.add(new Croissant("Worst",150));
+		broodjes.add(new Pistolet("Eiersalade",225));
+		broodjes.add(new Croissant("Boterhammenworst",30));
 	}
 	
 	void starten() {
@@ -25,11 +25,18 @@ class BroodjesZaak{
 			System.out.println(b);
 		}
 		startVerkoop();
+		startVerkoop();
+		startVerkoop();
+		feestVieren(new Pistolet("kaas", 33));
 	}
 	void startVerkoop() {
 		int keuze = kassa.verkopen();
 		Broodje broodje = broodjes.get(keuze);
 		System.out.println("U heeft gekozen voor een "+broodje);
+		kassa.afrekenen(broodje);
+	}
+	void feestVieren(Korting kortingartikel){
+		kortingartikel.kortingKrijgen();
 	}
 }
 

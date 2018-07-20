@@ -1,4 +1,4 @@
-public class Broodje {
+public abstract class Broodje {
 	String naam;
 	int prijs;
 	

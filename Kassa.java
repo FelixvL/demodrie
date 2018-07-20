@@ -12,4 +12,8 @@ public class Kassa {
 		int getal = Integer.parseInt(invoer);
 		return getal;
 	}
+	void afrekenen(Broodje broodje) {
+		geldhoeveelheid += broodje.prijs;
+		System.out.println("mijn geld is nu"+ geldhoeveelheid);
+	}
 }
